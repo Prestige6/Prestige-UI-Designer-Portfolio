@@ -46,18 +46,5 @@ function NumberTally() {
         }
     }, 50);
 }
-function makeFullscreen(TagId) {
-    const image = document.getElementById(TagId); // Assuming your image has an id of 'image'
-
-    if (image.requestFullscreen) {
-        image.requestFullscreen();
-    } else if (image.mozRequestFullScreen) { // For Firefox
-        image.mozRequestFullScreen();
-    } else if (image.webkitRequestFullscreen) { // For Chrome, Safari and Opera
-        image.webkitRequestFullscreen();
-    } else if (image.msRequestFullscreen) { // For IE/Edge
-        image.msRequestFullscreen();
-    }
-}
 NumberTally();
 
